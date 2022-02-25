@@ -1,0 +1,54 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Application</title>
+  <!-- View-port Basics: http://mzl.la/VYREaP -->
+  <!-- This meta tag is used for mobile device to display the page without any zooming,
+       so how much the device is able to fit on the screen is what's shown initially. 
+       Remove comments from this tag, when you want to apply media queries to the website. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- container start-->
+  <div class="container">
+    <div class="searchInput">
+      <form class="form" id="form">
+        <div class="form-group">
+          <input type="text" id="input-box" class="input-box" placeholder="Enter city name">
+        </div>
+        <div class="form-control">
+          <input type="submit" class="btn" id="btn" value="Submit">
+        </div>
+      </form>
+    </div>
+
+    <div class="weather">
+      <div class="location">
+        <div class="city" id="city">Mumbai,IN</div>
+        <div class="date" id="date">10 January, 2022</div>
+      </div>
+      <div class="weather-status">
+        <div class="temp" id="temp">25&deg;C</div>
+        <div class="climate" id="climate">Sunny</div>
+        <div class="wind-speed" id="wind-speed">Wind Speed</div>
+        <div class="img" id="img">
+          <img src="assets/images/sun.png" alt="Sunny sky" id="icon">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
